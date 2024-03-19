@@ -23,8 +23,8 @@ def selection_sort(arr):
         swap(arr, i, min_index)
     return arr
 
-def swap(arr, i, min_index):
-    arr[i] , arr[min_index] = arr[min_index], arr[i]
+def swap(arr, i, j):
+    arr[i] , arr[j] = arr[j], arr[i]
 
 input_array = [4, 5, 10, 15, 20, 16, 25, 7, 1, 6, 9, 2]
 print(selection_sort(input_array))
