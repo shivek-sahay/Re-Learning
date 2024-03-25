@@ -14,17 +14,14 @@ def main(s):
     while (right < n) :
         # If element is not present, find return the end oiterator
         if not s[right] in seen :
-            print('add', s[right])
             seen.add(s[right])
             max_length = max(max_length, right - left + 1)
-            print("max_length", max_length)
             right += 1
         else :
-            print('remove', s[left])
             seen.remove(s[left])
             left += 1
         print(seen)
     return max_length
 
-s = 'ytfabytfyfyffytft'
+s = 'shiveksahay'
 print(main(s))
